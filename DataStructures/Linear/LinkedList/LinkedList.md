@@ -64,6 +64,7 @@ while current:
 
 #include <iostream>
 using namespace std;
+
 template<typename T>
 struct ListNode
 {
@@ -102,7 +103,7 @@ struct List
             firstNode = p;
             lastNode = p;
         } 
-        else 
+        else
         {
             lastNode->next = p;
             lastNode = p;
