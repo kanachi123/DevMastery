@@ -8,6 +8,7 @@
 
 *языки в основном буду выбирать c++,c,rust,python и латинский*
 
-*или как говорил* ***Дедпул***:
+*или как говорил* ***Дедпул***: 
+> **Яйца в кулак**
 
 > ![**Яйца в кулак**](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGhidnh5ZHN2a25lNWx3aTBzYXY0bDBldmExcHFkdm1tYmxpbnl6cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d3bQVBHZ7oIPE73W/giphy.gif)
