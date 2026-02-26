@@ -7,7 +7,7 @@
 ## **Пример неориентированного графа**
 !["list"](https://kroki.io/mermaid/svg/eNpLL0osyFDwCeJSAAJHDQ0FQwVNTQVdXV0FJyDHCMjBlHEGcoxhMjBlYBkXIMcEyAEAuj8Oyg==)
 
-## **Eе можно реализовать по разному но я покажу два вида**
+## **Eе можно реализовать по разному,но я покажу два вида**
 
 1. ```cpp
     #include <vector>
@@ -35,7 +35,7 @@
 ### например A--ij[value]-->B--i+1j[value]-->A--ij+1[value]-->C
 ### index(C)--ret->(i+1,j--->foreach->n-1 -> index of other nodes)
 
-### но когда все станет сложнее и путатся тогда нужен будет класс с нормальными методами инкасулаяцией и RAII для этого что то похожее на второе
+### но когда все станет сложнее и все станет спагети кодом,тогда нужно уже классы с нормальными методами инкапсуляцией и RAII для этого что то похожее на второе
 
 ## **Пример ориентированного графа**
 !["list"](https://kroki.io/mermaid/svg/eNpLL0osyFDwCeJSAAJHDQ1DTU0FXV07BScNDSNNTXRRZw0NY6goRAFY1EVDwwRTLYQJAHMAEQc=)
