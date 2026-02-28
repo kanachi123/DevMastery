@@ -93,7 +93,7 @@ namespace my_hp{
         }
         void pop_heap() {
             if (hp.empty()) return;
-            hp.pop_back();/* для этого нужно написать еще sift_down,но мне лень вы как то сами */
+            hp.pop_back();/* для этого нужно написать еще sift_down,но мне лень вы как то сами,это вам не CRUD*/
         }
 
         const std::vector<T>& get_heap() const { return hp; }
