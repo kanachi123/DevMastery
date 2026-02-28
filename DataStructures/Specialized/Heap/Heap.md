@@ -91,11 +91,9 @@ namespace my_hp{
             hp.push_back(value);
             sift_up(hp.size() - 1);
         }
-        void pop_heap(const T& value) {
+        void pop_heap() {
             if (hp.empty()) return;
-            static_assert(std::is_arithmetic<T>::value, 
-                      "T must be a numeric type");
-            hp.pop_back(value);
+            hp.pop_back();
         }
 
         const std::vector<T>& get_heap() const { return hp; }
