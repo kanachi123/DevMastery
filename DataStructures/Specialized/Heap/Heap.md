@@ -102,7 +102,6 @@ namespace my_hp{
             return hp[i];
         } 
     }
-
     };
 }
 ```
