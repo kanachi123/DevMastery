@@ -72,3 +72,28 @@ level 0: 3-> 4 -> 5-> 6 -> 8
 2. Уровень 1: Интервал становится уже ([3,5,8]), сужаем область.
 3. Уровень 0: Интервал минимален ([3,4,5,6,8]), и здесь мы точно находим значение.
 
+### **Имплементация**
+```cpp
+
+namespace SL{//ты прям...slaaay Skip List field 💅
+
+#include <vector>
+#include <random>
+
+std::random_device rd;
+std::mt19937 gen(rd());
+std::bernulli_distribution u_ber(0.5);
+
+
+
+}
+
+
+
+
+
+```
+
+
+
+
