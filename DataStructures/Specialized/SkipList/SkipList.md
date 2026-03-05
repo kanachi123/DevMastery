@@ -101,7 +101,7 @@ namespace SL{//ты прям...slaaay Skip List field 💅
 
 std::random_device rd;
 std::mt19937 gen(rd());
-std::bernulli_distribution u_ber(0.5);//🚕 uniform distribution
+std::bernoulli_distribution u_ber(0.5);//🚕 distribution
 
 
 /* 
@@ -112,13 +112,13 @@ template<typename T>{
     class Node{
         T value;
         int count = 0;
-        vector<Node*> forward(nullptr,0);
-       Node* fixEmptyArgument() {
-            T arg1;
+        vector<vector<Node*>> forward;
+       /*Node* fixEmptyArgument() {лишняя сущность остаток пустого конструктора можно не учитывать комментирую
+            T arg;
     
             while (true) {
                 try {
-                    std::cout << "Please try again,as the constructor is empty: "<<std::endl>;
+                    std::cout << "Please try again,as the constructor is empty: "<<std::endl;
                     std::cin >> arg;
 
                     return new Node(arg);
@@ -128,10 +128,10 @@ template<typename T>{
                     std::cin.clear();
                 }
             }
-        }
+        }*/
         Node* fixType(){
 
-            T arg1;
+            T arg;
     
             while (true) {
                 try {
@@ -149,35 +149,26 @@ template<typename T>{
             
         }
         public:
-            Node():{
-
-                throw std::invalid_argument("Warning:Constructor is empty");
-                createInstance();
-            } 
+            Node() = delete;//не должно быть пустого аргумента
             Node(const T& value)
             {
                 if(!std::is_arithmetic<T>::value){
-                    throw std::invalid_argument("The type of the value is wrong");
+                    
                     fixType();
+                    //throw std::invalid_argument("The type of the value is wrong");
                 }
                 else{
                     this->value = value;нет
                 }
             } 
-            void insert(const T&)const;
-            void check_arithmetic(const T&)const;
+            void insert(const T&);
             Node* find(const T&)const;
 
 
 
 };
-Node::check_arithmetic(const T& value){
-    if(!std::is_arithmetic<T>::value){
-        throw std::invalid_argument("The type of the value is wrong");
-        fixType();
-    }
-}
-Node::insert(const T& _value)const{
+
+Node::insert(const T& _value){
 
     check_arithmetic(_value);
 
@@ -194,7 +185,7 @@ Node::insert(const T& _value)const{
                 //реализация места в уровне пока думаю
             }
 
-            forward[j].push_back(&_value);
+            forward[j].push_back(&_value);//
             forward[j]->value = _value;
         }
     }
