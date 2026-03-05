@@ -181,8 +181,9 @@ Node::insert(const T& _value)const{
     check_arithmetic(_value);
 
     bool i = 0;
-    forward.resize(++count);
-    for(int j =  count - 1 ;j > 0;j++){
+    //forward.resize(++count);
+    
+    for(int j =  ++count - 1 ;j > 0;j++){
         
         i = u_ber(gen);
         if(i){
