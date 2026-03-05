@@ -166,11 +166,12 @@ template<typename T>{
             } 
             void insert(const T&)const;
             void check_arithmetic(const T&)const;
+            Node* find(const T&)const;
 
 
 
 };
-Node::check_arithmetic(const T&){
+Node::check_arithmetic(const T& value){
     if(!std::is_arithmetic<T>::value){
         throw std::invalid_argument("The type of the value is wrong");
         fixType();
@@ -187,6 +188,12 @@ Node::insert(const T& _value)const{
         
         i = u_ber(gen);
         if(i){
+            
+
+            for(){
+                //реализация места в уровне пока думаю
+            }
+
             forward[j].push_back(&_value);
             forward[j]->value = _value;
         }
