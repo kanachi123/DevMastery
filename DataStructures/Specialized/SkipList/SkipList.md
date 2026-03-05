@@ -111,7 +111,8 @@ template<typename T>{
     //я люблю вложеннные классы(car->engine),но на этот раз не будет так,потом разберем почему в паттернах проектирования
     class Node{
         T value;
-        vector<Node*> forward;
+        int count = 0;
+        vector<Node*> forward(nullptr,0);
        Node* fixEmptyArgument() {
             T arg1;
     
@@ -163,11 +164,36 @@ template<typename T>{
                     this->value = value;нет
                 }
             } 
-    
+            void insert(const T&)const;
+            void check_arithmetic(const T&)const;
 
 
 
 };
+Node::check_arithmetic(const T&){
+    if(!std::is_arithmetic<T>::value){
+        throw std::invalid_argument("The type of the value is wrong");
+        fixType();
+    }
+}
+Node::insert(const T& _value)const{
+
+    check_arithmetic(_value);
+
+    bool i = 0;
+    forward.resize(++count);
+    for(int j =  count - 1 ;j > 0;j++){
+        
+        i = u_ber(gen);
+        if(i){
+            forward[j].push_back(&_value);
+            forward[j]->value = _value;
+        }
+    }
+    forward[0].push_back(&_value);
+    forward[0]->value = _value;
+
+}
 
 
 
