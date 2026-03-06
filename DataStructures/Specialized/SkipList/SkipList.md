@@ -136,7 +136,7 @@ template<typename T>{
                 Node* current = this;
                      //    
     //  level 0  ^     //[root]->[node]->*forward[i]->...->[]->[]->[]->inf
-    //    .      |     //[root]->[node]->*forward[i+1]->...->[]->[]->inf
+    //    .      |     //[root]->...[]->[node]->*forward[i+1]->...->inf
     //    .      |     //[root]->[node]->*forward[i+j]->...->[]->inf
     //  level 16 |     //[root]->inf
     //               //
