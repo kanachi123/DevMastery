@@ -107,11 +107,12 @@ namespace SL{//ты прям...slaaay Skip List field 💅
 template<typename T>{
     //я люблю вложеннные классы(car->engine),но на этот раз не будет так,потом разберем почему в паттернах проектирования
     class SkipList{
-        constexpr const int MAX_LEVEL = 16;
+        constexpr const int MAX_LEVEL = 16;/*
+        уровень насыщения 1/2^16 вероятности,больше нет смысла взять,константы через constexpr, чтобы было быстрее из-за compile time так быстрее,потому что до самой программы,вообще все константы через нее
+        */
         std::random_device rd;
         std::mt19937 gen(rd());
         std::bernoulli_distribution u_ber(0.5);//🚕
-
         class Node{
             T value;
             vector<Node*> forward;
@@ -122,15 +123,24 @@ template<typename T>{
                 if(!std::is_arithmetic<T>::value){
                     
                     fixType();
-                    //throw std::invalid_argument("The type of the value is wrong");
+                    //throw std::invalid_argument("The type of the value is wrong");//лишний блок сравнения и так учитывает нет смысла кидать ошибку
                 }
-                else{
-                    this->value = value;нет
+                else
+                {
+                    this->value = value;
                 }
             } 
             
             void insert(const T& _value) {
                 Node* current = this;
+                     //    
+    //  level 0  ^     //[root]->[node]->*forward[i]->...->[]->[]->[]->inf
+    //    .      |     //[root]->[node]->*forward[i+1]->...->[]->[]->inf
+    //    .      |     //[root]->[node]->*forward[i+j]->...->[]->inf
+    //  level 16 |     //[root]->inf
+    //               //
+                for(;;){}
+
             }
             
         };
@@ -139,6 +149,8 @@ template<typename T>{
         public:
             void insert(const T&);
             Node* find(const T&)const;
+            SkipList(const T& headVal = T()) : root(new Node(headVal,
+            MAX_LEVEL)) {}
     };
 
 }
