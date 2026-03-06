@@ -131,7 +131,8 @@ template<typename T>{
                 }
             } 
             
-            void insert(const T& _value) {
+            void insert(const T& _value) 
+            {
                 Node* current = this;
                      //    
     //  level 0  ^     //[root]->[node]->*forward[i]->...->[]->[]->[]->inf
@@ -139,7 +140,15 @@ template<typename T>{
     //    .      |     //[root]->[node]->*forward[i+j]->...->[]->inf
     //  level 16 |     //[root]->inf
     //               //
-                for(;;){}
+                size_t lvl = 0;
+                Node* newNode = new Node(_value);
+                for(size_t i = 1;i<MAX_LEVEL;i++)
+                {
+                    if(u_ber(gen)){
+                        lvl = i;
+                    }
+                }
+                newNode->forward.resize(lvl + 1,nullptr);
 
             }
             
