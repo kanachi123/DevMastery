@@ -131,7 +131,7 @@ class BinaryTree{
     void insertHelper(std::unique_ptr<Node>& node, const T& value);
     Node* searchHelper(Node* node, const T& value) const;
     void removeHelper(std::unique_ptr<Node>& node, const T& value);
-    void BinaryTree<T>::inorderHelper() const;
+    //void BinaryTree<T>::inorderHelper() const;
     public:
         BinaryTree() : root(nullptr) {}//можно и constructor() = delete;
         BinaryTree(const T& val) : root(std::make_unique<Node>(val)) {}
@@ -145,8 +145,8 @@ class BinaryTree{
             root->right = std::make_unique<Node>(rightVal);
         }
         Node* getRoot() const { return root.get(); }
-        void inorder() const;
-        void inorder(Node* node) const;
+        void inorder() const;//перегрузка функции это публичная
+        void inorder(Node* node) const;//перегрузка функции это рекурсивная
         bool empty() const {
             return root == nullptr;
         }
@@ -191,17 +191,17 @@ Node* BinaryTree<T>::searchHelper(Node* node,const T& value)const{
 }
 
 template<typename T>
-void BinaryTree<T>::inorderHelper()const{
+void BinaryTree<T>::inorder(Node* node)const{
     if(!node)
         return;
-    inorderHelper(node->left.get());
-    inorderHelper(node->right.get());
+    inorder(node->left.get());
+    inorder(node->right.get());
 }
 
 template<typename T>
 void BinaryTree<T>::inorder()const{
     
-    inorderHelper(root.get());
+    inorder(root.get());
 }
 
 template<typename T>
