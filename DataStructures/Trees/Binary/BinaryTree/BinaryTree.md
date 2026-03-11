@@ -153,6 +153,10 @@ class BinaryTree{
         void insert(const T& value);
         Node* search(const T& value) const;
         void remove(const T& value);
+        void BinaryTree<T>::printTree(Node* node,std::string prefix = "",bool isLeft = true)
+        const;
+        void BinaryTree<T>::printTree() const;
+
 
 };
 template<typename T>
@@ -255,6 +259,25 @@ template<typename T>
 void BinaryTree<T>::remove(const T& value){
     
     removeHelper(root,value);
+}
+template<typename T>
+void BinaryTree<T>::printTree(Node* node, int depth = 0) const {
+    if (!node)
+        return;
+    if(node->right){
+        printTree(node->right.get(),prefix + (isLeft ? "|\t":"\t"),false);
+
+    }
+    std::cout<<prefix;
+    std::cout<<(isLeft? "└── " : "┌── ");//левый ниже правого
+    std::cout<<node->value << std::endl;
+    if (node->left)
+        printTree(node->left.get(), prefix + (isLeft ? "\t" : "│\t"), true);
+}
+
+template<typename T>
+void BinaryTree<T>::printTree() const {
+    printTree(root.get());
 }
 }
 
