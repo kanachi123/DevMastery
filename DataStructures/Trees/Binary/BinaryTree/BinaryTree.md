@@ -121,8 +121,8 @@ namespace bTree{
 template<typename T>
 class BinaryTree{
     class Node{
-        T value;
         public:
+        T value;
         std::unique_ptr<Node> left;//RAII
         std::unique_ptr<Node> right;
         Node(const T& val) : value(val), left(nullptr), right(nullptr) {}
