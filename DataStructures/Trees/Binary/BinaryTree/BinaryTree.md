@@ -128,6 +128,9 @@ class BinaryTree{
         Node(const T& val) : value(val), left(nullptr), right(nullptr) {}
     };
     std::unique_ptr<Node>root;
+    void insertHelper(std::unique_ptr<Node>& node, const T& value);
+    Node* searchHelper(Node* node, const T& value) const;
+    void removeHelper(std::unique_ptr<Node>& node, const T& value);
     public:
         BinaryTree() : root(nullptr) {}//можно и constructor() = delete;
         BinaryTree(const T& val) : root(std::make_unique<Node>(val)) {}
@@ -141,6 +144,15 @@ class BinaryTree{
             root->right = std::make_unique<Node>(rightVal);
         }
         Node* getRoot() const { return root.get(); }
+        void inorder(Node* node) const;
+        void inorder() const;
+        bool empty() const {
+            return root == nullptr;
+        }
+        void insert(const T& value);
+        Node* search(const T& value) const;
+        void remove(const T& value);
+
 };
 
 }
