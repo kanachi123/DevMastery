@@ -182,7 +182,7 @@ Node* BinaryTree<T>::searchHelper(Node* node,const T& value)const{
         return nullptr;
     else if(value == node->value) //сравниваем ноду с значением если есть совпадение даем указатель на ноду
         return node;
-    else if(value < node->value>)
+    else if(value < node->value)
         return searchHelper(node->left.get(),value);//левый потомок меньше по значениею родителя
     else{
         return searchHelper(node->right.get(),value);
