@@ -41,7 +41,7 @@
 ##### *реализацию не буду писать,потому что можно просто наследовать от AbstractBinaryTree и переопределять методы(полиморфизм)*
 
 ```cpp
-template<typname T>
+template<typename T>
 class AbstractBinaryTree
 {
 protected:
@@ -65,8 +65,10 @@ public:
 
 };
 
+template<typename T>
 class BinarySearchTree : public AbstractBinaryTree
 {
+    using Node = typename AbstractBinaryTree<T>::Node;
 public:
 
     Node* find(const T& key) override;
