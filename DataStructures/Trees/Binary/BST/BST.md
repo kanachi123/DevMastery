@@ -70,11 +70,9 @@ class BinarySearchTree : public AbstractBinaryTree
 {
     using Node = typename AbstractBinaryTree<T>::Node;
 public:
-
     Node* find(const T& key) override;
     void insert(const T& key) override;
     void remove(const T& key) override;
-
 };
 
 ...
