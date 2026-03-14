@@ -41,13 +41,13 @@
 ##### *реализацию не буду писать,потому что можно просто наследовать от AbstractBinaryTree и переопределять методы(полиморфизм)*
 
 ```cpp
-
+template<typname T>
 class AbstractBinaryTree
 {
 protected:
     struct Node
     {
-        int key;
+        T key;
         Node* left;
         Node* right;
     };
