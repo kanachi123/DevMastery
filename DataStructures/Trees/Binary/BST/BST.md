@@ -69,9 +69,9 @@ class BinarySearchTree : public AbstractBinaryTree
 {
 public:
 
-    Node* find(int key) override;
-    void insert(int key) override;
-    void remove(int key) override;
+    Node* find(const T& key) override;
+    void insert(const T& key) override;
+    void remove(const T& key) override;
 
 };
 
