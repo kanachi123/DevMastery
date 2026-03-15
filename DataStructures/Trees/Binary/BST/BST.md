@@ -51,7 +51,6 @@ protected:
         Node* left;
         Node* right;
     };
-
     Node* root;
 
 public:
