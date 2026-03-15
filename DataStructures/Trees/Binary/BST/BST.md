@@ -65,7 +65,7 @@ public:
 };
 
 template<typename T>
-class BinarySearchTree : public AbstractBinaryTree
+class BinarySearchTree : public AbstractBinaryTree<T>
 {
     using Node = typename AbstractBinaryTree<T>::Node;
 public:

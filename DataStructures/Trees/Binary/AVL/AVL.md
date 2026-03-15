@@ -181,3 +181,29 @@ C
 | может стать списком | всегда сбалансировано |
 | поиск O(n)          | поиск O(log n)        |
 | нет поворотов       | есть повороты         |
+
+```cpp
+
+template<typename T>
+class AVLTree : public AbstractBinaryTree<T>{
+    
+    int height(Node* n);
+    int getBalance(Node* n);
+    Node* rotateLeft(Node* x);
+    Node* rotateRight(Node* y);
+    protected:
+        struct Node
+        {
+            T key;
+            Node* left;
+            Node* right;
+            int height;
+        };
+        Node* root;
+    public:
+        Node* find(const T& key) override;
+        void insert(const T& key) override;
+        void remove(const T& key) override;
+}
+
+```
