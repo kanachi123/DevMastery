@@ -61,6 +61,7 @@ std::sort()
 
 пресдавим что это функция K(x,y)
 ```
+
 Простой калькулятор:
 сложность: 1
 польза: 5
@@ -68,5 +69,21 @@ std::sort()
 Банковская система:
 сложность: 1000
 польза: 10000
+
+Efficiency=Complexity/Benefit​
+
+Реально функция выглядит скорее так:
+
+K=f(C,B,M,P,R,T)
+
+где:
+
+C — complexity (сложность);
+B — business value (ценность);
+M — maintainability (поддерживаемость);
+P — performance;
+R — risk;
+T — time to market.
+
 
  
