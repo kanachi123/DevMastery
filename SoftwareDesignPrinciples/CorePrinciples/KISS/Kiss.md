@@ -86,4 +86,6 @@ R — risk;
 T — time to market.
 
 
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3ZwM3prMzgwcDB4b3J4MXR4YnN2amp0M3Rla3l5eDN2cThmenFyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/63KSlbQdBprzzLg1uh/giphy.gif)
+
  
