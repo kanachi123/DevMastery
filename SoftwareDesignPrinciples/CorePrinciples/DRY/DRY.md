@@ -73,6 +73,6 @@ ShowProfile(user);
 
 -կա միայն մեկ ճշմարտություն - скорат,аристотель,критический реализм,модернисты,ремодернисты,DRY
 -постмодернизм рулит - Франуса Лиотар
--чувки не спорте,я метамодернист-критический реалист вы говно - я
+-чувки не спорте,я метамодернист-критический реалист вы говно - я  
 
 ![hi hegel](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWU0aHl0Ym12aW1hMDR5NG1zem92NWY1ZGZ0eDhsNzhwYm40dGhyaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/11LmeD33ETXN1C/giphy.gif)  
