@@ -28,4 +28,6 @@
 **«Не создавай меч, который никогда не достанешь из ножен.»**  
 
 -я буду учитывать все случаи
--но если ты не знаешь все случаи,как тогда ты будешь учитывать их
+-но если ты не знаешь все случаи,как тогда ты будешь учитывать их  
+
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWhuajBkaW8zcHVwcnBoYW5nbGUwem03OW5keHhsYmk2Z2lqajV1dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jzHFPlw89eTqU/giphy.gif)  
