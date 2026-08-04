@@ -16,3 +16,5 @@
 представим такую ситуацию твой продукт менеджер приходит и говорит чувак у тебя классная архитектура но клияет передумал ты дал...удали большую часть кода который ты написал он вместо Saas хотел простую cli  
 
 короче говоря не пиши теорию всего чтобы не тратить лишнее время на тот код который ты удалишь по закону Мёрфи  
+
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGd3dTF5dXY3ZTVmOGYxbjV0dDFydW9oeDMzbmx4dDdvY3BpdXNyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3EiNpweH34XGoQcq9Q/giphy.gif)
