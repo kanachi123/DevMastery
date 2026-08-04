@@ -17,4 +17,8 @@
 
 короче говоря не пиши теорию всего чтобы не тратить лишнее время на тот код который ты удалишь по закону Мёрфи  
 
-![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGd3dTF5dXY3ZTVmOGYxbjV0dDFydW9oeDMzbmx4dDdvY3BpdXNyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3EiNpweH34XGoQcq9Q/giphy.gif)
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGd3dTF5dXY3ZTVmOGYxbjV0dDFydW9oeDMzbmx4dDdvY3BpdXNyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3EiNpweH34XGoQcq9Q/giphy.gif)  
+
+вайб чувака это человек который придерживается презентизма
+
+типо живешь сейчас,а не завтра
