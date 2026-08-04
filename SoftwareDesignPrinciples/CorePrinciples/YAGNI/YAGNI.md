@@ -32,6 +32,6 @@
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWhuajBkaW8zcHVwcnBoYW5nbGUwem03OW5keHhsYmk2Z2lqajV1dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jzHFPlw89eTqU/giphy.gif)  
 
-если будет слишком много функционала и лишней это будет похоже на салон самолета в котором многие кнопочки не будут нужны
+если будет слишком много функционала и лишней это будет похоже на салон самолета в котором многие кнопочки не будут нужны  
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWdpOG5wd2J4Y2kzbDlnMGxjYmJydTQ2MjUyNW40c3FtbmZ0bnVwaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZXZZ0Bm0Y9vtz2aIkk/giphy.gif)  
