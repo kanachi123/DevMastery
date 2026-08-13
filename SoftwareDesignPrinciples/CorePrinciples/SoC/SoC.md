@@ -60,14 +60,14 @@ class Subject{
 
 class Human : public Subject{
 
-    Human();
+    Human() = default;
     
     void work(const size_t& hours);
     ...
 }
 class Child : public Subject{
 
-    Child();
+    Child() = default;
 
     void play(const string& GameName){};
     
