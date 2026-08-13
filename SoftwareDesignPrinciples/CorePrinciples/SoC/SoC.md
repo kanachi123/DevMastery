@@ -50,17 +50,27 @@ void Human(){
 ```cpp
 
 class Subject{
-    
+    ...
     public:
-    Subject() = delete;//в нашей реализации не важен конструктор,удаляем просто
-    virtual void eat(string& food) = 0;
+    Subject() = default;
+    void eat(const string& food);
+    ...
 
 }
 
 class Human : public Subject{
-    void eat(string& food)override{
-        ...
-    }
+
+    Human();
+    
+    void work(const size_t& hours);
+    ...
+}
+class Child : public Subject{
+
+    Child();
+
+    void play(const string& GameName){};
+    
 }
 
 
