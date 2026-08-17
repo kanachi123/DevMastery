@@ -98,3 +98,4 @@ class Child : public Subject{
 ```Шеф не должен знать, какую среду разработки (IDE) использует программист, и какие у него настройки. Шефу нужен результат работы.В коде: Внешняя система вызывает у Human метод work(). Как именно устроен этот ворк внутри — никого не волнует. Это называется инкапсуляцией обязанностей.```  
 
 ![](https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YmdzZWxyZzZpbW1yZzk1MTZqZjl1eG56YzBnNDBjOG9xMXNrZnZzbSZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/xdLH51eNWZAHrwy5mf/giphy.gif)  
+
