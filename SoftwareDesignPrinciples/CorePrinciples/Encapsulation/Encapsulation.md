@@ -54,8 +54,17 @@ class Circle{
 //здесь у нас нет прямого доступа,но мы меняем ее цвет через конструктор  
 
 ```  
+```cpp
 
+class Car{
+    Engine engine;
 
+    public:
+    Car(){
+        engine.vrumvrum();
+    }
+}
 
-
+```
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWRjcXRxcHUzZ2M3N2czOWxza3NuZTY4Z2trc2MxdGU5bWJ5bDE1aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZsZmffS4YS5yw/giphy.gif)  
 
