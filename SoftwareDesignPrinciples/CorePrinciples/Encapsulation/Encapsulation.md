@@ -45,7 +45,7 @@ class Circle{
 
     sf::CircleShape circle;
     public:
-    Circle(uint& color):
+    Circle(sf::Color& color):
     {
         здесь могут быть проверки для внутреннего компонента после которого можно кинуть исключение но я не стал бы делать это в конструкторе
         circle.setFillColor(color);  
