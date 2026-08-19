@@ -56,6 +56,8 @@ i + n + t → int
 
 важно - *модель отличается от абстракции*
 
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExam54ZXd0d3EydW95bjdreWtjZjU2c251bW0yeTZra3J5MHd4enRrdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9RXJJBPDWx9nfhDmT1/giphy.gif)  
+
 ## ***Абстракция***  
 
 *Она отвечает на другой вопрос что считать важным и вписать в модель,а что считать лишней сущностью по бритве оккама и не писать размер своего писюна в базе данных банка*  
