@@ -61,7 +61,7 @@ class renderGraphics{
 class Audio{
     std::unique_ptr<Audio> audio;
     public:
-    Audio();
+    Audio(const Audio& audio);
     void startSample();
     void stopSample();
 }
